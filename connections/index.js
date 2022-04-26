@@ -3,13 +3,10 @@ const mongoose = require('mongoose');
 
 dotenv.config({ path: './config.env' });
 
-// console.log('porss', process.env.DATABASE);
-// const DB = process.env.DATABASE.replace(
-//   '<password>',
-//   process.env.DATABASE_PASSWORD,
-// );
-
-const DB = 'mongodb://localhost:27017/express-db';
+const DB = process.env.DATABASE.replace(
+  '<password>',
+  process.env.DATABASE_PASSWORD,
+);
 
 mongoose
   .connect(DB)
