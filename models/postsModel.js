@@ -12,7 +12,7 @@ const postSchema = new mongoose.Schema(
     },
     createdAt: {
       type: Date,
-      default: Date.now(),
+      default: Date.now,
       select: false,
     },
     name: {
@@ -23,6 +23,9 @@ const postSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
+  },
+  {
+    versionKey: false,
   },
 );
 const Post = mongoose.model('Post', postSchema);
