@@ -1,12 +1,12 @@
 {
 	"info": {
-		"_postman_id": "6188f3a2-f67c-42b0-b5fa-959001bb7f41",
-		"name": "hex-express-heroku",
+		"_postman_id": "fb55732e-e096-464f-907c-122bb750b7af",
+		"name": "hex-w4-heroku",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "取得所有代辦",
+			"name": "取得貼文(排序&搜尋)",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -23,28 +23,38 @@
 					}
 				},
 				"url": {
-					"raw": "https://murmuring-woodland-66220.herokuapp.com/posts",
+					"raw": "https://ancient-basin-54740.herokuapp.com/posts?timeSort=asc&q=",
 					"protocol": "https",
 					"host": [
-						"murmuring-woodland-66220",
+						"ancient-basin-54740",
 						"herokuapp",
 						"com"
 					],
 					"path": [
 						"posts"
+					],
+					"query": [
+						{
+							"key": "timeSort",
+							"value": "asc"
+						},
+						{
+							"key": "q",
+							"value": ""
+						}
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "新增單筆代辦",
+			"name": "新增單筆貼文",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"Jingtest33333\",\n    \"tags\":\"spots\",\n    \"type\":\"group\",\n    \"content\":\"just test\"\n}",
+					"raw": "{\n    \"user\":\"627a12b2403b89456b468c71\",\n    \"content\":\"測試關聯資料test\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -52,10 +62,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://murmuring-woodland-66220.herokuapp.com/posts",
+					"raw": "https://ancient-basin-54740.herokuapp.com/posts",
 					"protocol": "https",
 					"host": [
-						"murmuring-woodland-66220",
+						"ancient-basin-54740",
 						"herokuapp",
 						"com"
 					],
@@ -67,7 +77,7 @@
 			"response": []
 		},
 		{
-			"name": "刪除所有代辦",
+			"name": "刪除所有貼文",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -81,10 +91,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://murmuring-woodland-66220.herokuapp.com/posts",
+					"raw": "https://ancient-basin-54740.herokuapp.com/posts",
 					"protocol": "https",
 					"host": [
-						"murmuring-woodland-66220",
+						"ancient-basin-54740",
 						"herokuapp",
 						"com"
 					],
@@ -96,7 +106,7 @@
 			"response": []
 		},
 		{
-			"name": "刪除單筆代辦",
+			"name": "刪除單筆貼文",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -110,29 +120,29 @@
 					}
 				},
 				"url": {
-					"raw": "https://murmuring-woodland-66220.herokuapp.com/posts/6271e77560e33a95f5430deb",
+					"raw": "https://ancient-basin-54740.herokuapp.com/posts/627a28f3e4544fe203b5f051",
 					"protocol": "https",
 					"host": [
-						"murmuring-woodland-66220",
+						"ancient-basin-54740",
 						"herokuapp",
 						"com"
 					],
 					"path": [
 						"posts",
-						"6271e77560e33a95f5430deb"
+						"627a28f3e4544fe203b5f051"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "編輯單筆代辦",
+			"name": "編輯單筆貼文",
 			"request": {
 				"method": "PATCH",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"content\":\"修改內容1\",\n    \"name\":\"change\"\n}",
+					"raw": "{\n    \"content\":\"測試關聯資料3\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -140,16 +150,16 @@
 					}
 				},
 				"url": {
-					"raw": "https://murmuring-woodland-66220.herokuapp.com/posts/6271e78860e33a95f5430ded",
+					"raw": "https://ancient-basin-54740.herokuapp.com/posts/627a1f194edbdaacba7b7013",
 					"protocol": "https",
 					"host": [
-						"murmuring-woodland-66220",
+						"ancient-basin-54740",
 						"herokuapp",
 						"com"
 					],
 					"path": [
 						"posts",
-						"6271e78860e33a95f5430ded"
+						"627a1f194edbdaacba7b7013"
 					]
 				}
 			},
