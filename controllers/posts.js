@@ -1,11 +1,19 @@
 const handleError = require('../handle/handleError');
 const handleSuccess = require('../handle/handleSuccess');
 const Post = require('../models/postsModel');
+const User = require('../models/usersModel');
 const mongoose = require('mongoose');
 
 const posts = {
   async getPosts(req, res) {
-    const allPosts = await Post.find();
+    const timeSort = req.query.timeSort === 'asc' ? 'createdAt' : '-createdAt';
+    const q = req.query.q !== undefined ? { content: new RegExp(req.query.q) } : {};
+    const allPosts = await Post.find(q)
+      .populate({
+        path: 'user', // 會找 PostModal 裡的欄位 user
+        select: 'name photo',
+      })
+      .sort(timeSort);
     handleSuccess(res, allPosts);
     res.end();
   },
@@ -15,10 +23,8 @@ const posts = {
       const { body } = req;
       if (body.content) {
         const newPost = await Post.create({
-          name: body.name,
+          user: body.user,
           content: body.content,
-          tags: body.tags,
-          type: body.type,
         });
         handleSuccess(res, newPost);
       } else {
