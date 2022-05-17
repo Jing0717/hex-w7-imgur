@@ -1,0 +1,375 @@
+{
+	"info": {
+		"_postman_id": "c380a1b1-a57a-4716-985c-df4add365b31",
+		"name": "hex-w6-jwt-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "取得貼文(排序&搜尋)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hex-w6-jwt.herokuapp.com/posts?timeSort=asc&q=",
+							"protocol": "https",
+							"host": [
+								"hex-w6-jwt",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "timeSort",
+									"value": "asc"
+								},
+								{
+									"key": "q",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "刪除所有貼文",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"今天要刷牙3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hex-w6-jwt.herokuapp.com/posts",
+							"protocol": "https",
+							"host": [
+								"hex-w6-jwt",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "新增單筆貼文",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\":\"測試關聯資料3333\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hex-w6-jwt.herokuapp.com/posts",
+							"protocol": "https",
+							"host": [
+								"hex-w6-jwt",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "刪除單筆貼文",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"今天要刷牙3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hex-w6-jwt.herokuapp.com/posts/62836ecc82b280e7d0ba1c50",
+							"protocol": "https",
+							"host": [
+								"hex-w6-jwt",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"posts",
+								"62836ecc82b280e7d0ba1c50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "編輯單筆貼文",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\":\"testttt\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hex-w6-jwt.herokuapp.com/posts/62836ebd82b280e7d0ba1c4a",
+							"protocol": "https",
+							"host": [
+								"hex-w6-jwt",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"posts",
+								"62836ebd82b280e7d0ba1c4a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "新增user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"jingtest\",\n    \"email\":\"jingtest@test.com\",\n    \"confirmPassword\":\"1q2w3e4r\",\n    \"password\":\"1q2w3e4r\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hex-w6-jwt.herokuapp.com/users/sign_up",
+					"protocol": "https",
+					"host": [
+						"hex-w6-jwt",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"sign_up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "登入user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"jingtest@test.com\",\n    \"password\":\"1q2w3e4r\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hex-w6-jwt.herokuapp.com/users/sign_in",
+					"protocol": "https",
+					"host": [
+						"hex-w6-jwt",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"sign_in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更改password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"confirmPassword\":\"1q2w3e4r\",\n    \"password\":\"1q2w3e4r\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hex-w6-jwt.herokuapp.com/users/updatePassword",
+					"protocol": "https",
+					"host": [
+						"hex-w6-jwt",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"updatePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hex-w6-jwt.herokuapp.com/users/profile",
+					"protocol": "https",
+					"host": [
+						"hex-w6-jwt",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update profile",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"jingchange666\",\n    \"photo\":\"testUrl\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hex-w6-jwt.herokuapp.com/users/profile",
+					"protocol": "https",
+					"host": [
+						"hex-w6-jwt",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
