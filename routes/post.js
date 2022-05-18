@@ -5,8 +5,10 @@ const PostsControllers = require('../controllers/posts');
 const { isAuth } = require('../service/auth');
 const handleErrorAsync = require('../service/handleErrorAsync');
 
-router.get('/', isAuth, handleErrorAsync(PostsControllers.getPosts));
+router.delete('/:id', isAuth, handleErrorAsync(PostsControllers.deleteOnePost));
 
-router.delete('/', isAuth, handleErrorAsync(PostsControllers.deleteAllPosts));
+router.patch('/:id', isAuth, handleErrorAsync(PostsControllers.updateOnePost));
+
+router.post('/', isAuth, handleErrorAsync(PostsControllers.createdPosts));
 
 module.exports = router;

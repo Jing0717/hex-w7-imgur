@@ -45,7 +45,11 @@ const posts = {
   },
   async updateOnePost(req, res, next) {
     const { body, params } = req;
-    const patchOnePost = await Post.findByIdAndUpdate(params.id, body);
+    if (body.content === '') {
+      return next(appError(400, 'content不可為空', next));
+    }
+    // runValidators 可以根據 schema 更新
+    const patchOnePost = await Post.findByIdAndUpdate(params.id, body, { runValidators: true });
     if (patchOnePost === null) {
       return next(appError(400, '沒有此id貼文，不可編輯', next));
     }
