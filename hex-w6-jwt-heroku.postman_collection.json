@@ -18,7 +18,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODQ1ZjE4ZDI1MzEyMzcyZDQ3OTk3YSIsImlhdCI6MTY1Mjg0MjI3OCwiZXhwIjoxNjUzNDQ3MDc4fQ.rjSf0uhUlac38A_CUPBbC29KRHJ0d3gVb-q6ang-5a8",
 								"type": "default"
 							}
 						],
@@ -112,7 +112,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://hex-w6-jwt.herokuapp.com/posts",
+							"raw": "https://hex-w6-jwt.herokuapp.com/post",
 							"protocol": "https",
 							"host": [
 								"hex-w6-jwt",
@@ -120,7 +120,7 @@
 								"com"
 							],
 							"path": [
-								"posts"
+								"post"
 							]
 						}
 					},
@@ -147,7 +147,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://hex-w6-jwt.herokuapp.com/posts/62836ecc82b280e7d0ba1c50",
+							"raw": "https://hex-w6-jwt.herokuapp.com/post/62836ecc82b280e7d0ba1c50",
 							"protocol": "https",
 							"host": [
 								"hex-w6-jwt",
@@ -155,7 +155,7 @@
 								"com"
 							],
 							"path": [
-								"posts",
+								"post",
 								"62836ecc82b280e7d0ba1c50"
 							]
 						}
@@ -183,7 +183,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://hex-w6-jwt.herokuapp.com/posts/62836ebd82b280e7d0ba1c4a",
+							"raw": "https://hex-w6-jwt.herokuapp.com/post/62836ebd82b280e7d0ba1c4a",
 							"protocol": "https",
 							"host": [
 								"hex-w6-jwt",
@@ -191,7 +191,7 @@
 								"com"
 							],
 							"path": [
-								"posts",
+								"post",
 								"62836ebd82b280e7d0ba1c4a"
 							]
 						}
@@ -207,7 +207,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"jingtest\",\n    \"email\":\"jingtest@test.com\",\n    \"confirmPassword\":\"1q2w3e4r\",\n    \"password\":\"1q2w3e4r\"\n}",
+					"raw": "{\n    \"name\":\"jingtest111\",\n    \"email\":\"jingtest111@test.com\",\n    \"confirmPassword\":\"1q2w3e4r\",\n    \"password\":\"1q2w3e4r\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
