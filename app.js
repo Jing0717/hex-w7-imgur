@@ -10,6 +10,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const postsRouter = require('./routes/posts');
 const postRouter = require('./routes/post');
+const uploadRouter = require('./routes/upload');
 
 require('./connections');
 
@@ -36,6 +37,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/posts', postsRouter);
 app.use('/post', postRouter);
+app.use('/upload', uploadRouter);
 
 // express 錯誤處理
 // 自己設定的 err 錯誤
