@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "c380a1b1-a57a-4716-985c-df4add365b31",
-		"name": "hex-w6-jwt-heroku",
+		"_postman_id": "a16f7b0d-adfd-4468-8229-6a2d8a999358",
+		"name": "hex-w7-imgur-heroku",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -18,7 +18,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODQ1ZjE4ZDI1MzEyMzcyZDQ3OTk3YSIsImlhdCI6MTY1Mjg0MjI3OCwiZXhwIjoxNjUzNDQ3MDc4fQ.rjSf0uhUlac38A_CUPBbC29KRHJ0d3gVb-q6ang-5a8",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODQ1NGEyNGQzZGIzMTJlYTllMDZmOCIsImlhdCI6MTY1MjgzOTU5OCwiZXhwIjoxNjUzNDQ0Mzk4fQ.w9FHfC4qfszLALROheYCOkQm3BZ_PcZA4UDJu0OWTcw",
 								"type": "default"
 							}
 						],
@@ -32,10 +32,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://hex-w6-jwt.herokuapp.com/posts?timeSort=asc&q=",
+							"raw": "https://hex-w7-imgur.herokuapp.com/posts?timeSort=asc&q=",
 							"protocol": "https",
 							"host": [
-								"hex-w6-jwt",
+								"hex-w7-imgur",
 								"herokuapp",
 								"com"
 							],
@@ -77,10 +77,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://hex-w6-jwt.herokuapp.com/posts",
+							"raw": "https://hex-w7-imgur.herokuapp.com/posts",
 							"protocol": "https",
 							"host": [
-								"hex-w6-jwt",
+								"hex-w7-imgur",
 								"herokuapp",
 								"com"
 							],
@@ -98,7 +98,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODQ1NGEyNGQzZGIzMTJlYTllMDZmOCIsImlhdCI6MTY1MjgzOTU5OCwiZXhwIjoxNjUzNDQ0Mzk4fQ.w9FHfC4qfszLALROheYCOkQm3BZ_PcZA4UDJu0OWTcw",
 								"type": "default"
 							}
 						],
@@ -112,10 +112,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://hex-w6-jwt.herokuapp.com/post",
+							"raw": "https://hex-w7-imgur.herokuapp.com/post",
 							"protocol": "https",
 							"host": [
-								"hex-w6-jwt",
+								"hex-w7-imgur",
 								"herokuapp",
 								"com"
 							],
@@ -147,10 +147,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://hex-w6-jwt.herokuapp.com/post/62836ecc82b280e7d0ba1c50",
+							"raw": "https://hex-w7-imgur.herokuapp.com/post/62836ecc82b280e7d0ba1c50",
 							"protocol": "https",
 							"host": [
-								"hex-w6-jwt",
+								"hex-w7-imgur",
 								"herokuapp",
 								"com"
 							],
@@ -169,13 +169,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODQ1NGEyNGQzZGIzMTJlYTllMDZmOCIsImlhdCI6MTY1MjgzOTU5OCwiZXhwIjoxNjUzNDQ0Mzk4fQ.w9FHfC4qfszLALROheYCOkQm3BZ_PcZA4UDJu0OWTcw",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"content\":\"testttt\"\n}",
+							"raw": "{\n    \"content\":\"\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -183,16 +183,16 @@
 							}
 						},
 						"url": {
-							"raw": "https://hex-w6-jwt.herokuapp.com/post/62836ebd82b280e7d0ba1c4a",
+							"raw": "https://hex-w7-imgur.herokuapp.com/post/6284590394738b3321feeb24",
 							"protocol": "https",
 							"host": [
-								"hex-w6-jwt",
+								"hex-w7-imgur",
 								"herokuapp",
 								"com"
 							],
 							"path": [
 								"post",
-								"62836ebd82b280e7d0ba1c4a"
+								"6284590394738b3321feeb24"
 							]
 						}
 					},
@@ -207,7 +207,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"jingtest111\",\n    \"email\":\"jingtest111@test.com\",\n    \"confirmPassword\":\"1q2w3e4r\",\n    \"password\":\"1q2w3e4r\"\n}",
+					"raw": "{\n    \"name\":\"jingtest\",\n    \"email\":\"jingtest@test.com\",\n    \"confirmPassword\":\"1q2w3e4r\",\n    \"password\":\"1q2w3e4r\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -215,10 +215,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://hex-w6-jwt.herokuapp.com/users/sign_up",
+					"raw": "https://hex-w7-imgur.herokuapp.com/users/sign_up",
 					"protocol": "https",
 					"host": [
-						"hex-w6-jwt",
+						"hex-w7-imgur",
 						"herokuapp",
 						"com"
 					],
@@ -245,10 +245,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://hex-w6-jwt.herokuapp.com/users/sign_in",
+					"raw": "https://hex-w7-imgur.herokuapp.com/users/sign_in",
 					"protocol": "https",
 					"host": [
-						"hex-w6-jwt",
+						"hex-w7-imgur",
 						"herokuapp",
 						"com"
 					],
@@ -281,10 +281,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://hex-w6-jwt.herokuapp.com/users/updatePassword",
+					"raw": "https://hex-w7-imgur.herokuapp.com/users/updatePassword",
 					"protocol": "https",
 					"host": [
-						"hex-w6-jwt",
+						"hex-w7-imgur",
 						"herokuapp",
 						"com"
 					],
@@ -320,10 +320,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://hex-w6-jwt.herokuapp.com/users/profile",
+					"raw": "https://hex-w7-imgur.herokuapp.com/users/profile",
 					"protocol": "https",
 					"host": [
-						"hex-w6-jwt",
+						"hex-w7-imgur",
 						"herokuapp",
 						"com"
 					],
@@ -356,16 +356,57 @@
 					}
 				},
 				"url": {
-					"raw": "https://hex-w6-jwt.herokuapp.com/users/profile",
+					"raw": "https://hex-w7-imgur.herokuapp.com/users/profile",
 					"protocol": "https",
 					"host": [
-						"hex-w6-jwt",
+						"hex-w7-imgur",
 						"herokuapp",
 						"com"
 					],
 					"path": [
 						"users",
 						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload img",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM2NWU4ZWNmZjY4MDk0ZGQ1OTUwYyIsImlhdCI6MTY1Mjc3ODUyMSwiZXhwIjoxNjUzMzgzMzIxfQ.OpfBKzHfY7qR6o6qd83XkmpHzjFijKq2hQF3ZI9fWF4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/Users/jingwu/Desktop/873f1b2c185fdb2c43b65ba3109641ca-187.jpeg"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hex-w7-imgur.herokuapp.com/upload",
+					"protocol": "https",
+					"host": [
+						"hex-w7-imgur",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"upload"
 					]
 				}
 			},
